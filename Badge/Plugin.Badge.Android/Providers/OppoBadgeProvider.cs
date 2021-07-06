@@ -29,7 +29,7 @@ namespace Plugin.Badge
 				intent.PutExtra("upgradeNumber", badgeNumber);
 				mContext.SendBroadcast(intent);
 			}
-			catch (System.Exception ex)
+			catch (System.Exception)
 			{
 				int version = GetSupportVersion();
 				if (version == 6)
@@ -56,7 +56,7 @@ namespace Plugin.Badge
 			{
 				ROMVERSION = ((Integer)ExecuteClassLoad(GetClass("com.color.os.ColorBuild"), "getColorOSVERSION", null, null)).IntValue();
 			}
-			catch (System.Exception e)
+			catch (System.Exception)
 			{
 				ROMVERSION = 0;
 			}
@@ -189,7 +189,7 @@ namespace Plugin.Badge
 						input.Close();
 					}
 				}
-				catch (IOException e)
+				catch (IOException)
 				{
 
 				}

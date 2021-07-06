@@ -27,7 +27,7 @@ namespace Plugin.Badge
 				{
 					Console.WriteLine("(XIAOMI) unable to set badge: " + ex.Message);
 				}
-			} catch (System.Exception e) {
+			} catch (System.Exception) {
 				try
 				{
 					var localIntent = new Intent("android.intent.action.APPLICATION_MESSAGE_UPDATE");
