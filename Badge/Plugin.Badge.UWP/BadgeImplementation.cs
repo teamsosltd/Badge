@@ -32,7 +32,7 @@ namespace Plugin.Badge
             //badgeXml.LoadXml(string.Format("<badge value='{0}'/>", badgeNumber));
             var badge = new BadgeNotification(badgeXml);
             BadgeUpdateManager.CreateBadgeUpdaterForApplication().Update(badge);
-            BadgeUpdateManager.CreateBadgeUpdaterForApplication().Update(badge);
+            //BadgeUpdateManager.CreateBadgeUpdaterForApplication().Update(badge);
 #endif
         }
 
