@@ -30,7 +30,7 @@ namespace Plugin.Badge
     {
 #if PORTABLE
             return null;
-#elif NETSTANDARD1_4
+#elif NETSTANDARD2_0
             return null;
 #else
             return new BadgeImplementation();
