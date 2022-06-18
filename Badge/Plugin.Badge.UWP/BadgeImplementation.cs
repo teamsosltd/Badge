@@ -18,7 +18,6 @@ namespace Plugin.Badge
         /// Sets the badge.
         /// </summary>
         /// <param name="badgeNumber">The badge number.</param>
-        /// <param name="title">The title. Used only by Android</param>
         public void SetBadge(int badgeNumber)
         {
 #if WINDOWS_PHONE
